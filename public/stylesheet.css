@@ -14,9 +14,19 @@ body {
 }
 
 p {
-  position: absolute;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 30px;
-  padding-left: 50px;
-  padding-top: 10px;
+  font-size: 40px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.comment-container {
+  position: absolute;
+}
+
+.first-option {
+  padding-bottom: 30px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #292a2b;
 }
