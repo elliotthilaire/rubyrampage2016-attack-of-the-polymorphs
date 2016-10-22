@@ -11,3 +11,7 @@ end
 get '/run-away' do
   erb :'story/run-away'
 end
+
+get '/fin' do
+  erb :'story/fin'
+end
