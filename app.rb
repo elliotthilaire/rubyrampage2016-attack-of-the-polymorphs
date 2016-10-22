@@ -4,7 +4,6 @@ enable :sessions
 
 get '/' do
   session[:page] = 'to-kick-or-not-to-kick' unless session[:page]
-
   erb "story/#{session[:page]}".to_sym
 end
 
@@ -15,5 +14,6 @@ end
 
 get '/:page' do
   session[:page] = params[:page]
-  redirect to '/'
+  erb "story/#{session[:page]}".to_sym
+  #   redirect to '/'
 end
