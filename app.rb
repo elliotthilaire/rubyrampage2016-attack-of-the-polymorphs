@@ -16,8 +16,8 @@ get '/:page' do
   session[:page] = params[:page]
   increment_deaths_if_dead
 
-  erb "story/#{session[:page]}".to_sym
-  #   redirect to '/'
+  # erb "story/#{session[:page]}".to_sym
+  redirect to '/'
 end
 
 before do
