@@ -4,3 +4,8 @@
   width:800px;
   background-repeat: no-repeat;
 }
+
+p {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 30px;
+}
