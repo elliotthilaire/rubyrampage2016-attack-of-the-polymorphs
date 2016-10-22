@@ -25,7 +25,7 @@ before do
 end
 
 def increment_deaths_if_dead
-  death_scenes = %w(sheep-death)
+  death_scenes = %w(sheep-death mass-destruction sheep-transformation)
   session[:deaths] = 0 unless session[:deaths]
   if death_scenes.include? params[:page]
     session[:deaths] += 1
