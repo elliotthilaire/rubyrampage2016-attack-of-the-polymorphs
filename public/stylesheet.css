@@ -4,6 +4,9 @@ body {
 }
 
 .story-frame {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 40px;
+
   position: relative;
   height: 600px;
   width:800px;
@@ -14,8 +17,6 @@ body {
 }
 
 p {
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 40px;
   padding-top: 20px;
   margin: auto;
 }
@@ -31,6 +32,7 @@ p {
   border-bottom-color: #292a2b;
 }
 
+
 input[type=text] {
     border: none;
     border-bottom: 2px solid #292a2b;
@@ -44,4 +46,9 @@ input[type=button], input[type=submit] {
   color: white;
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
+}
+
+.continue {
+  padding-top:20px;
+  text-align:center
 }

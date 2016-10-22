@@ -28,10 +28,16 @@ get '/first-encounter' do
   redirect to '/'
 end
 
-get '/talking-sheep' do
-  session[:page] = 'talking-sheep'
+get '/talking-sheep-1' do
+  session[:page] = 'talking-sheep-1'
   redirect to '/'
 end
+
+get '/talking-sheep-2' do
+  session[:page] = 'talking-sheep-2'
+  redirect to '/'
+end
+
 
 get '/fin' do
   session[:page] = 'fin'
