@@ -10,7 +10,7 @@ end
 
 get '/to-kick-or-not-to-kick' do
   session[:page] = 'to-kick-or-not-to-kick'
-  erb :'story/to-kick-or-not-to-kick'
+  redirect to '/'
 end
 
 get '/run-away' do
