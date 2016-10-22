@@ -23,6 +23,7 @@ p {
 
 .comment-container {
   position: absolute;
+  max-width:300px;
 }
 
 .first-option {
@@ -51,6 +52,6 @@ input[type=button], input[type=submit] {
 }
 
 .continue {
-  padding-top:20px;
+  padding-top:500px;
   text-align:center
 }
