@@ -8,12 +8,26 @@ get '/' do
 end
 
 get '/play-again' do
-  session.clear
+  session[:page] = nil
   redirect to '/'
 end
 
 get '/:page' do
   session[:page] = params[:page]
+  increment_deaths_if_dead
+
   erb "story/#{session[:page]}".to_sym
   #   redirect to '/'
+end
+
+before do
+  increment_deaths_if_dead
+end
+
+def increment_deaths_if_dead
+  death_scenes = %w(sheep-death)
+  session[:deaths] = 0 unless session[:deaths]
+  if death_scenes.include? params[:page]
+    session[:deaths] += 1
+  end
 end
