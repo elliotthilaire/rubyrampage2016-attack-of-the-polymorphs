@@ -8,43 +8,12 @@ get '/' do
   erb "story/#{session[:page]}".to_sym
 end
 
-get '/to-kick-or-not-to-kick' do
-  session[:page] = 'to-kick-or-not-to-kick'
-  redirect to '/'
-end
-
-get '/run-away' do
-  session[:page] = 'run-away'
-  redirect to '/'
-end
-
-get '/abduction' do
-  session[:page] = 'abduction'
-  redirect to '/'
-end
-
-get '/first-encounter' do
-  session[:page] = 'first-encounter'
-  redirect to '/'
-end
-
-get '/talking-sheep-1' do
-  session[:page] = 'talking-sheep-1'
-  redirect to '/'
-end
-
-get '/talking-sheep-2' do
-  session[:page] = 'talking-sheep-2'
-  redirect to '/'
-end
-
-
-get '/fin' do
-  session[:page] = 'fin'
-  redirect to '/'
-end
-
 get '/play-again' do
   session.clear
+  redirect to '/'
+end
+
+get '/:page' do
+  session[:page] = params[:page]
   redirect to '/'
 end
