@@ -12,6 +12,18 @@ get '/run-away' do
   erb :'story/run-away'
 end
 
+get '/abduction' do
+  erb :'story/abduction'
+end
+
+get '/first-encounter' do
+  erb :'story/first-encounter'
+end
+
+get '/talking-sheep' do
+  erb :'story/talking-sheep'
+end
+
 get '/fin' do
   erb :'story/fin'
 end
