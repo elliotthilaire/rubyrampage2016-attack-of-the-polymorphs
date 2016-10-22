@@ -42,10 +42,12 @@ input[type=text] {
 }
 
 input[type=button], input[type=submit] {
-  background-color: #292a2b;
-  color: white;
+  background-color: transparent;;
+  color: blue;
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
+  border: none;
+  border-bottom: 2px solid blue;
 }
 
 .continue {
