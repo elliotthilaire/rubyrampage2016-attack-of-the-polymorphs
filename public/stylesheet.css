@@ -6,7 +6,6 @@ body {
 .story-frame {
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
-
   position: relative;
   height: 600px;
   width:800px;
@@ -17,8 +16,8 @@ body {
 }
 
 p {
-  padding-top: 20px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .comment-container {
@@ -26,29 +25,12 @@ p {
   max-width:300px;
 }
 
-.first-option {
-  padding-bottom: 30px;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #292a2b;
-}
-
-
 input[type=text] {
-    border: none;
-    border-bottom: 2px solid #292a2b;
-    background-color: transparent;
-    font-family: 'Reenie Beanie', cursive;
-    font-size: 40px;
-}
-
-input[type=button], input[type=submit] {
-  background-color: transparent;;
-  color: blue;
+  border: none;
+  border-bottom: 2px solid #292a2b;
+  background-color: transparent;
   font-family: 'Reenie Beanie', cursive;
   font-size: 40px;
-  border: none;
-  border-bottom: 2px solid blue;
 }
 
 .footer-nav {
@@ -56,4 +38,17 @@ input[type=button], input[type=submit] {
   width: 100%;
   margin-top: 420px;
   text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
 }
