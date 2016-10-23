@@ -20,6 +20,7 @@ end
 get '/:page' do
   if File.exist?("views/story/#{params[:page]}.erb")
     session[:page] = params[:page]
+    increment_deaths if dead?
     redirect to '/'
   else
     halt 404
@@ -32,12 +33,7 @@ not_found do
 end
 
 error do
-  increment_deaths
   erb :'500'
-end
-
-before do
-  increment_deaths if dead?
 end
 
 def increment_deaths
