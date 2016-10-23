@@ -28,14 +28,6 @@ p {
   max-width:300px;
 }
 
-input[type=text] {
-  border: none;
-  border-bottom: 2px solid #292a2b;
-  background-color: transparent;
-  font-family: 'Reenie Beanie', cursive;
-  font-size: 40px;
-}
-
 .footer-nav {
   position: absolute;
   width: 100%;
