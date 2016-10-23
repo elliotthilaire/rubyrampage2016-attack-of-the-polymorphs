@@ -2,7 +2,12 @@
 <div class="story-frame" style="background-image: url(images/sheep-transformation.jpg);">
 
   <div class="comment-container" style="min-width: 150px; left: 150px; top: 50px;">
-    <p>Oops. Too fleecy.</p>
+    <% if session[:deaths] > 1 %>
+      <p>Fleeced again!</p>
+    <% else %>
+      <p>Oops. Too fleecy.</p>
+    <% end %>
+
     <p>
       <a href="http://twitter.com/home?status=I was eaten by sheep in http://attack-of-the-polymorphs.2016.rubyrampage.com">Tweet this</a>
     </p>
@@ -11,6 +16,9 @@
   <div class="footer-nav">
     <p>
       <a href="play-again">Play again</a>
+    </p>
+    <p class="death-toll">
+      Your deaths so far: <%=session[:deaths]%>
     </p>
   </div>
 
