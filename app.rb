@@ -32,10 +32,6 @@ not_found do
   erb :'404'
 end
 
-error do
-  erb :'500'
-end
-
 def increment_deaths
   session[:deaths] = 0 unless session[:deaths]
   session[:deaths] += 1
